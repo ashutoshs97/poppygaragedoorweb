@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Champions Garage Door Repair - Expert Service</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Roboto+Slab:wght@500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0F2A3A", // Deep Navy
+                        "primary-dark": "#0A1D29",
+                        "accent": "#F5C342",  // Brighter Gold/Mustard for pop
+                        "accent-hover": "#DDA721",
+                        "background-light": "#F8FAFC",
+                        "text-dark": "#111827", // Almost black for high contrast body text
+                        "slate-850": "#1a2e3b",
+                        "urgent-red": "#B91C1C", // Darker, punchier red
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"],
+                        "serif": ["Roboto Slab", "serif"],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                        'card-heavy': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+                        'gold-glow': '0 0 15px rgba(245, 195, 66, 0.4)',
+                        'solid': '4px 4px 0px 0px rgba(15, 42, 58, 0.1)',
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+    @layer utilities {
+        .text-shadow {
+            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+        }
+        .text-shadow-lg {
+            text-shadow: 0 4px 8px rgba(0,0,0,0.7);
+        }
+        .text-shadow-none {
+            text-shadow: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    }
+</style>
+</head>
+<body class="font-sans bg-white text-text-dark antialiased selection:bg-accent selection:text-primary">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-50 w-full bg-white border-b-4 border-accent shadow-md">
+<div class="bg-primary py-1 text-center text-white text-sm font-bold tracking-wide">
+            AVAILABLE 24/7 FOR EMERGENCIES • <span class="text-accent">NO EXTRA CHARGE FOR WEEKENDS</span>
+</div>
+<div class="px-6 md:px-10 lg:px-20 xl:px-40 flex justify-center h-24">
+<div class="flex w-full max-w-[1280px] items-center justify-between">
+<div class="flex items-center gap-3 text-primary group cursor-pointer hover:opacity-90 transition-opacity">
+<div class="relative h-16 w-16 overflow-hidden rounded-md border-2 border-primary shadow-sm bg-accent flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-primary">garage_home</span>
+</div>
+<div class="flex flex-col">
+<h2 class="text-2xl font-serif font-black tracking-tight leading-none uppercase text-primary">Champions</h2>
+<span class="text-xs font-bold tracking-widest text-primary uppercase bg-accent px-1">Garage Door Repair</span>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary text-base font-bold hover:text-accent-hover transition-colors uppercase tracking-tight" href="#">Services</a>
+<a class="text-primary text-base font-bold hover:text-accent-hover transition-colors uppercase tracking-tight" href="#">Reviews</a>
+<a class="text-primary text-base font-bold hover:text-accent-hover transition-colors uppercase tracking-tight" href="#">Why Us</a>
+<a class="text-primary text-base font-bold hover:text-accent-hover transition-colors uppercase tracking-tight" href="#">FAQ</a>
+</nav>
+<div class="flex flex-col items-end gap-1">
+<a class="hidden sm:flex items-center justify-center rounded-md h-12 px-6 bg-urgent-red hover:bg-red-700 text-white text-base font-black shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 border-b-4 border-red-900" href="#">
+<span class="material-symbols-outlined text-[24px] mr-2 animate-pulse">call</span>
+<span>(555) 123-4567</span>
+</a>
+<span class="hidden sm:block text-[10px] font-bold text-urgent-red uppercase tracking-wide">Call Now - Limited Spots!</span>
+<button class="md:hidden text-primary p-2 border-2 border-primary rounded bg-gray-100">
+<span class="material-symbols-outlined text-3xl font-bold">menu</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<section class="relative flex flex-col justify-center items-center px-4 md:px-10 lg:px-40 py-24 lg:py-32 min-h-[650px] overflow-hidden bg-slate-900 border-b-8 border-accent">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-primary/90 z-10 mix-blend-multiply"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent z-10 opacity-80"></div>
+<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDmE29BBn46_lcClyLDZXwzTs5Vsj6K_ixxUShar7mINhB1Il71tkR5Kq_avF7Tc7oZz5IvvyDTPp0qA47PZmg6zWuxbnCdkXWTL2qEY9utr7pE3EfVhwWmPf35iJWoAU0PQq4vfxuj-glT0LNEuj3mkfm45vhvPdGn-lQxX5QicAb-ARB0ppTJfst5q74fWZLSSl5pQhQqbkH1coHwkQ9OLQLaBecnys3LPfTFcbAsBSNr62AD3njqc9wA8iQ6cm01Ei81_Tqe5KM'); filter: contrast(1.1);"></div>
+</div>
+<div class="relative z-20 flex w-full max-w-[1100px] flex-col items-center text-center gap-6">
+<div class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-urgent-red border-2 border-white/30 shadow-[0_0_20px_rgba(185,28,28,0.5)] cursor-default animate-bounce duration-[2000ms]">
+<span class="material-symbols-outlined text-white text-xl animate-pulse">e911_emergency</span>
+<span class="text-sm md:text-base font-black text-white uppercase tracking-widest">We Arrive in 60 Minutes or Less</span>
+</div>
+<h1 class="text-white text-5xl md:text-6xl lg:text-7xl font-serif font-black leading-[1.1] tracking-tight text-shadow-lg max-w-5xl mt-2">
+                    Expert Garage Door<br class="hidden md:block"/> <span class="text-accent underline decoration-4 underline-offset-4 decoration-white/20">Repair Services</span>
+</h1>
+<h2 class="text-white text-lg md:text-2xl font-bold leading-relaxed max-w-3xl text-shadow bg-primary/40 p-4 rounded-xl backdrop-blur-sm border border-white/10">
+                    Broken spring? Door won't open? <span class="text-accent">We fix it today.</span> Fast, reliable, and affordable same-day service. Trusted by over 5,000 local homeowners.
+                </h2>
+<div class="w-full max-w-2xl mt-8 flex flex-col items-center gap-6">
+<div class="flex flex-col sm:flex-row w-full gap-5 items-center justify-center">
+<button class="h-16 px-8 bg-accent hover:bg-white text-primary text-xl font-black rounded-lg border-b-4 border-yellow-600 hover:border-white transition-all shadow-xl hover:shadow-2xl flex items-center justify-center gap-3 transform hover:-translate-y-1 w-full sm:w-auto min-w-[280px]">
+<span class="material-symbols-outlined text-3xl font-bold">call</span>
+                            CALL NOW: (555) 123-4567
+                        </button>
+<div class="h-16 px-8 bg-white hover:bg-gray-100 text-primary text-lg font-bold rounded-lg border-b-4 border-gray-300 flex items-center justify-center shadow-lg w-full sm:w-auto gap-2 min-w-[280px]">
+<span class="material-symbols-outlined text-urgent-red text-2xl">timer</span>
+<span>Same-Day Service Guaranteed</span>
+</div>
+</div>
+<p class="text-sm font-bold text-accent mt-2 uppercase tracking-wide bg-primary/80 px-4 py-1 rounded">
+                        Available 24/7 - Don't Delay!
+                    </p>
+</div>
+<div class="mt-10 flex flex-col sm:flex-row items-center gap-4 bg-white px-8 py-4 rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.2)] border-b-4 border-gray-200">
+<div class="flex -space-x-4">
+<div class="size-12 rounded-full border-4 border-white bg-cover bg-center shadow-sm" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB84__-g9G0yGZtyIUAbTDGbteVPTD2r5sNfJ-OdwoDe0maiqLQdohtXz9mIQAim6ECJl1Yvzf0OajKKpKsKjeL4qeZ0KPg-H-GoED_aorEnUBx4E68zGwjfW2dznbbb8HdSaOn00TiY2fvNNddcrg0tS2XBAPC9qn57AMcnN6_NPRr2XdIvyDI4y0BAIS_SKrQ2vLQCT6iwd6O4ZQPl9TFuHaDC8TRd78tSx5kNf_Zjgx-KDaq0T2Yzx9UeabPwN-xPWq8sSWjJqY');"></div>
+<div class="size-12 rounded-full border-4 border-white bg-cover bg-center shadow-sm" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCVg74_-92swECzjMj6ScY7nOmgLOjdO3Yy6a3xrF7oGuKAjGou58UMwNW0PmxxFSS3081Jv1EF-E5WAWLe-9kaHgee2RagaAo6xwnhwMf0szSckLz4BGEy0QRl5d6yomkAcJSOyiz-vdr8HBsUsnIzQZEsrMqIThbVF2yQExmVTVIFncfmx9-qGWonONExMrjvYY1W88M8ae_t7ESOudFhe8XVnNbw1sWwEaYx05iEFP-2wVJwDB7KFKe6efQJpkHRFhpTMe9oH64');"></div>
+<div class="size-12 rounded-full border-4 border-white bg-primary flex items-center justify-center text-xs text-white font-bold shadow-sm">5k+</div>
+</div>
+<div class="flex flex-col text-left">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-accent text-lg" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-accent text-lg" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-accent text-lg" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-accent text-lg" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined text-accent text-lg" style="font-variation-settings: 'FILL' 1">star</span>
+</div>
+<span class="text-sm font-black text-primary leading-none mt-1 uppercase">#1 Rated in the Area</span>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-background-light border-b border-gray-200 relative z-20 -mt-2">
+<div class="max-w-[1280px] mx-auto px-4 md:px-10 lg:px-20 py-10">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 divide-x-0 md:divide-x-2 divide-gray-200">
+<div class="flex flex-col items-center text-center px-2 group">
+<span class="material-symbols-outlined text-4xl text-primary mb-2 group-hover:scale-110 transition-transform">workspace_premium</span>
+<span class="text-3xl font-black text-primary">15+</span>
+<span class="text-sm font-bold text-gray-600 uppercase tracking-wide">Years Experience</span>
+</div>
+<div class="flex flex-col items-center text-center px-2 group">
+<span class="material-symbols-outlined text-4xl text-accent mb-2 group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="text-3xl font-black text-primary">5.0</span>
+<span class="text-sm font-bold text-gray-600 uppercase tracking-wide">Star Rating</span>
+</div>
+<div class="flex flex-col items-center text-center px-2 group">
+<span class="material-symbols-outlined text-4xl text-primary mb-2 group-hover:scale-110 transition-transform">verified_user</span>
+<span class="text-3xl font-black text-primary">Lifetime</span>
+<span class="text-sm font-bold text-gray-600 uppercase tracking-wide">Warranty</span>
+</div>
+<div class="flex flex-col items-center text-center px-2 group">
+<span class="material-symbols-outlined text-4xl text-urgent-red mb-2 group-hover:scale-110 transition-transform">bolt</span>
+<span class="text-3xl font-black text-primary">24/7</span>
+<span class="text-sm font-bold text-gray-600 uppercase tracking-wide">Emergency Service</span>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-4 md:px-10 lg:px-40 bg-white">
+<div class="max-w-[1280px] mx-auto">
+<div class="flex flex-col items-center text-center mb-16 gap-4">
+<span class="bg-accent text-primary px-3 py-1 rounded font-black tracking-widest uppercase text-xs shadow-sm">Our Values</span>
+<h2 class="text-primary text-4xl md:text-5xl font-serif font-black tracking-tight uppercase">Why Choose Champions?</h2>
+<div class="h-1.5 w-24 bg-accent mt-2 rounded-full"></div>
+<p class="text-text-dark text-lg md:text-xl font-medium max-w-2xl leading-relaxed mt-4">
+                    We combine technical expertise with customer-first values. Don't settle for less than the best.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="group flex flex-col items-center text-center p-8 bg-white rounded-xl shadow-card hover:shadow-card-heavy transition-all duration-300 hover:-translate-y-2 border-2 border-gray-100 hover:border-accent relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+<div class="mb-6 p-4 rounded-full bg-primary text-white group-hover:bg-accent group-hover:text-primary transition-colors shadow-md">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">engineering</span>
+</div>
+<h3 class="text-primary font-black text-xl mb-3 uppercase">Expert Technicians</h3>
+<p class="text-gray-700 text-base font-medium leading-relaxed">
+                            Fully licensed, insured, and continuously trained. We don't employ subcontractors.
+                        </p>
+</div>
+<div class="group flex flex-col items-center text-center p-8 bg-white rounded-xl shadow-card hover:shadow-card-heavy transition-all duration-300 hover:-translate-y-2 border-2 border-gray-100 hover:border-accent relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+<div class="mb-6 p-4 rounded-full bg-primary text-white group-hover:bg-accent group-hover:text-primary transition-colors shadow-md">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">timer</span>
+</div>
+<h3 class="text-primary font-black text-xl mb-3 uppercase">Fast Response</h3>
+<p class="text-gray-700 text-base font-medium leading-relaxed">
+                            Same-day appointments and emergency response times under 60 minutes.
+                        </p>
+</div>
+<div class="group flex flex-col items-center text-center p-8 bg-white rounded-xl shadow-card hover:shadow-card-heavy transition-all duration-300 hover:-translate-y-2 border-2 border-gray-100 hover:border-accent relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+<div class="mb-6 p-4 rounded-full bg-primary text-white group-hover:bg-accent group-hover:text-primary transition-colors shadow-md">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">payments</span>
+</div>
+<h3 class="text-primary font-black text-xl mb-3 uppercase">Upfront Pricing</h3>
+<p class="text-gray-700 text-base font-medium leading-relaxed">
+                            Clear, transparent quotes with no hidden fees. You know the cost before we start.
+                        </p>
+</div>
+<div class="group flex flex-col items-center text-center p-8 bg-white rounded-xl shadow-card hover:shadow-card-heavy transition-all duration-300 hover:-translate-y-2 border-2 border-gray-100 hover:border-accent relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+<div class="mb-6 p-4 rounded-full bg-primary text-white group-hover:bg-accent group-hover:text-primary transition-colors shadow-md">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<h3 class="text-primary font-black text-xl mb-3 uppercase">Satisfaction Guarantee</h3>
+<p class="text-gray-700 text-base font-medium leading-relaxed">
+                            We stand behind our work with a lifetime warranty on parts and labor.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-4 md:px-10 lg:px-40 bg-background-light border-y border-gray-200">
+<div class="max-w-[1280px] mx-auto flex flex-col gap-12">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6 text-center md:text-left mb-4 border-b-2 border-gray-200 pb-8">
+<div class="flex flex-col gap-4 max-w-3xl">
+<h2 class="text-primary text-4xl md:text-5xl font-serif font-black tracking-tight leading-tight uppercase">
+                            Our Garage Door Services
+                        </h2>
+<p class="text-text-dark text-xl font-medium leading-relaxed">
+                            We handle everything from broken springs to complete opener replacements with precision and care.
+                        </p>
+</div>
+<a class="hidden md:flex items-center justify-center gap-2 bg-primary text-white px-6 py-3 rounded font-bold hover:bg-primary-dark transition-all shadow-md hover:shadow-lg" href="#">
+                        View all services <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+<div class="group flex flex-col bg-white rounded-xl border-2 border-gray-200 shadow-sm hover:shadow-xl hover:border-accent transition-all duration-300 overflow-hidden transform hover:-translate-y-2 relative">
+<div class="absolute top-4 right-4 z-30 bg-urgent-red text-white text-[10px] font-black px-2 py-1 rounded uppercase shadow-sm">Same Day Service</div>
+<div class="h-48 relative overflow-hidden bg-gray-100">
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-colors z-10"></div>
+<img alt="Garage door springs" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoENfbW6KInjeccXZh49Y5cpYPOXv2A5O0YlhprP_I9b2DQIa4Qng8Fgh2j9vY469QfkciN-u189-LKbUDwONhFixynR9LzQMYHWfbXPTPTcjZc5cnseHN8IkZb9Xw591OQOx7QDZ8c7Vp-ivrU_U_KZHAhUUnI04ZD6Mf0tuX0zRH6DiQqep3BSgaC9cVmd7E7r0jLyOCcl6oh1fauL71vlXxqbuABfflSBjSzQ3ulrKQ8hFgEC_BNE6e17WGGKpWPTmkJcLaPZ4"/>
+<div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
+<div class="absolute bottom-4 left-4 size-10 rounded-md bg-accent flex items-center justify-center text-primary shadow-lg z-20 border-2 border-white">
+<span class="material-symbols-outlined text-2xl font-bold">build</span>
+</div>
+</div>
+<div class="flex flex-col gap-3 p-6 h-full">
+<h3 class="text-2xl font-black text-primary leading-tight font-serif">Spring Replacement</h3>
+<p class="text-gray-700 text-sm font-medium leading-relaxed">High-cycle torsion and extension springs installed same-day for lasting durability.</p>
+<a class="mt-auto pt-4 text-sm font-black text-primary hover:text-accent-hover flex items-center gap-1 transition-all group-hover:gap-2 uppercase tracking-wide" href="#">
+                                Learn more <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="group flex flex-col bg-white rounded-xl border-2 border-gray-200 shadow-sm hover:shadow-xl hover:border-accent transition-all duration-300 overflow-hidden transform hover:-translate-y-2 relative">
+<div class="absolute top-4 right-4 z-30 bg-accent text-primary text-[10px] font-black px-2 py-1 rounded uppercase shadow-sm">Popular</div>
+<div class="h-48 relative overflow-hidden bg-gray-100">
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-colors z-10"></div>
+<img alt="Garage door opener" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4EOZjTFwmgmetb226gikLiHtt6y_G4jxwnMcFT-vezFnHratgEDIjLOLYVy-yhqumMChQy4dTpMh7YXqrLVIy20DvL0H6GlSXYv157y5Qo3f4LilU7-_8-5VNmg5Q9z8kSEWODrJFxCH4DcRAJAbE5VieVm7chxeIk1140YWFTN0aXwMblfnnei-JJpqXYWL5uETVCQgAZbYCAT9LJMOeFsN8BH-G0BVg8T2zYUTTy1mTg7qoNdtGsbmMTkYVAdXLNrKo3Cw2QJ8"/>
+<div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
+<div class="absolute bottom-4 left-4 size-10 rounded-md bg-accent flex items-center justify-center text-primary shadow-lg z-20 border-2 border-white">
+<span class="material-symbols-outlined text-2xl font-bold">settings_remote</span>
+</div>
+</div>
+<div class="flex flex-col gap-3 p-6 h-full">
+<h3 class="text-2xl font-black text-primary leading-tight font-serif">Opener Repair</h3>
+<p class="text-gray-700 text-sm font-medium leading-relaxed">Expert diagnosis, motor repair, and keypad programming for all major brands.</p>
+<a class="mt-auto pt-4 text-sm font-black text-primary hover:text-accent-hover flex items-center gap-1 transition-all group-hover:gap-2 uppercase tracking-wide" href="#">
+                                Learn more <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="group flex flex-col bg-white rounded-xl border-2 border-gray-200 shadow-sm hover:shadow-xl hover:border-accent transition-all duration-300 overflow-hidden transform hover:-translate-y-2">
+<div class="h-48 relative overflow-hidden bg-gray-100">
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-colors z-10"></div>
+<img alt="Off-track garage door repair" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKM4xhrhPVfFxc_c-8HYt_ubSeuE2H9hoXbOPk5KCLk_vPEFwG3Rm09S_yuMRxrEUBU-0so3DXWw1MXFjJ7gsFJrDTQK08Pe_h73EExMYC8MmpGEtr8KqGMzfuV13plSpm8FSdLv6L8EcHstGerpDfKIs423pIR9Vhg_D8ciqA6OnsdV3v8DAexkATPy5S2rwGCxUyyoQo1BWzssA2Ug_X4SbZPG1-Ffd3A4Huz7TJdBLc0HRbzrxN8TJVmuxr-5IJPW13o5UFfQs"/>
+<div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
+<div class="absolute bottom-4 left-4 size-10 rounded-md bg-accent flex items-center justify-center text-primary shadow-lg z-20 border-2 border-white">
+<span class="material-symbols-outlined text-2xl font-bold">warning</span>
+</div>
+</div>
+<div class="flex flex-col gap-3 p-6 h-full">
+<h3 class="text-2xl font-black text-primary leading-tight font-serif">Off-Track Doors</h3>
+<p class="text-gray-700 text-sm font-medium leading-relaxed">Safe and secure realignment for stuck or crooked doors to prevent damage.</p>
+<a class="mt-auto pt-4 text-sm font-black text-primary hover:text-accent-hover flex items-center gap-1 transition-all group-hover:gap-2 uppercase tracking-wide" href="#">
+                                Learn more <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="group flex flex-col bg-white rounded-xl border-2 border-gray-200 shadow-sm hover:shadow-xl hover:border-accent transition-all duration-300 overflow-hidden transform hover:-translate-y-2">
+<div class="h-48 relative overflow-hidden bg-gray-100">
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-colors z-10"></div>
+<img alt="Cable repair" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvr8c0zUfJJsVydEp8PaN5lTwwr9q02LJKzsDYZ78nrtn-Wg5UDymSv7p-otHiZ3PRNeZ2GayVzwN4GZRLLKG5mQuayg2I2gnxwDnh8g-nk2zbx2Rx05k2Tu7Qq3ca9vYJQaanrQepwKUv7N5Pr6rdobY8jwVz2eSvi-2OB6AmtaQjTn6MZeuWfJj2SsyJFPpyRusbU-iVttrnTnf-C6K9jdQCZivFc7tBSEllMciO59FhHfyfM0F5MY4m3FTRiumkesHOPa5j5Jc"/>
+<div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
+<div class="absolute bottom-4 left-4 size-10 rounded-md bg-accent flex items-center justify-center text-primary shadow-lg z-20 border-2 border-white">
+<span class="material-symbols-outlined text-2xl font-bold">cable</span>
+</div>
+</div>
+<div class="flex flex-col gap-3 p-6 h-full">
+<h3 class="text-2xl font-black text-primary leading-tight font-serif">Cable Repair</h3>
+<p class="text-gray-700 text-sm font-medium leading-relaxed">Heavy-duty aircraft-grade cable replacement for snapped or frayed lines.</p>
+<a class="mt-auto pt-4 text-sm font-black text-primary hover:text-accent-hover flex items-center gap-1 transition-all group-hover:gap-2 uppercase tracking-wide" href="#">
+                                Learn more <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-primary relative overflow-hidden border-t-8 border-accent">
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: repeating-linear-gradient(45deg, #D6B35E 0, #D6B35E 1px, transparent 0, transparent 50%); background-size: 10px 10px;"></div>
+<div class="px-4 md:px-10 lg:px-40 py-20 md:py-24 relative z-10">
+<div class="max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 text-center lg:text-left">
+<div class="flex flex-col gap-6 max-w-3xl">
+<div class="flex items-center gap-3 justify-center lg:justify-start bg-urgent-red text-white px-5 py-2 rounded-md w-fit mx-auto lg:mx-0 shadow-lg border border-white/20">
+<span class="material-symbols-outlined text-2xl animate-pulse">e911_emergency</span>
+<span class="font-black tracking-widest uppercase text-sm md:text-base">URGENT • EMERGENCY SERVICE</span>
+<div class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+</div>
+</div>
+<h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-none font-serif mt-2">
+                            Stuck in your garage?<br/> We offer <span class="text-accent underline decoration-4 underline-offset-8">24/7 Emergency Repairs.</span>
+</h2>
+<p class="text-gray-200 text-xl font-medium leading-relaxed max-w-2xl">
+                            We'll be there in under an hour. No extra charge for nights or weekends.
+                        </p>
+</div>
+<div class="flex-shrink-0 flex flex-col gap-3">
+<button class="bg-accent hover:bg-white text-primary text-2xl font-black py-6 px-12 rounded-lg shadow-[0_0_30px_rgba(245,195,66,0.5)] transition-all transform hover:scale-105 flex items-center justify-center gap-4 group border-b-8 border-yellow-600">
+<span class="material-symbols-outlined text-4xl group-hover:animate-bounce">phone_in_talk</span>
+                            CALL: (555) 123-4567
+                        </button>
+<span class="text-white text-sm font-bold tracking-widest uppercase text-center bg-white/10 py-1 rounded">Technicians Standing By Now!</span>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-4 md:px-10 lg:px-40 bg-white">
+<div class="max-w-[1280px] mx-auto flex flex-col gap-16">
+<div class="flex flex-col items-center text-center gap-4">
+<h2 class="text-primary text-4xl md:text-6xl font-serif font-black tracking-tight uppercase">What Our Customers Say</h2>
+<div class="flex flex-col items-center gap-2 mt-2 bg-background-light p-4 rounded-xl border border-gray-200 shadow-sm">
+<div class="text-primary font-black text-3xl flex flex-col sm:flex-row items-center gap-3">
+<span>4.9/5 Stars</span>
+<span class="hidden sm:inline text-gray-300">|</span>
+<span class="text-base font-bold text-gray-600 uppercase tracking-wide">Based on 1,200+ Reviews</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-accent text-3xl fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-accent text-3xl fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-accent text-3xl fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-accent text-3xl fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-accent text-3xl fill-current" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group relative w-full aspect-video bg-gray-900 rounded-xl overflow-hidden shadow-card-heavy cursor-pointer transform transition-transform hover:-translate-y-2 border-4 border-gray-100 hover:border-accent">
+<img alt="Video Testimonial from James" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5E-LOLqpqy7yLbYVozxE6kX2XXa4gaWs7OiJ43uBu9pveZFvLLhQ5Nod_pS4qU8DpQngd5x7tfwbqrsMzx4N64zUaaWd2-LX-iKrhfVc2uMVhX_i2Gxbr8Aci4onBnLKE4WH4Z6Cb5v7Av5zJMTmI86uqcQTDM19K_gQ3Kmjo2FFOv3ym-9_dpeF-fEXGvdfqi2Fp9Ian6_AxcrHJiZTZd0_lTnWM2X9x6SeNXPS5A7I_Y65sVjr_yrR0zJ69r4U25bXArU4WYSg"/>
+<div class="absolute inset-0 bg-black/20 flex flex-col items-center justify-center transition-colors group-hover:bg-black/10">
+<div class="size-16 rounded-full bg-accent text-primary border-4 border-white flex items-center justify-center mb-3 shadow-2xl transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-4xl ml-1 font-bold">play_arrow</span>
+</div>
+<span class="bg-primary text-white px-3 py-1 font-bold tracking-wide uppercase text-xs rounded shadow-md">Video Testimonial</span>
+</div>
+</div>
+<div class="group relative w-full aspect-video bg-gray-900 rounded-xl overflow-hidden shadow-card-heavy cursor-pointer transform transition-transform hover:-translate-y-2 border-4 border-gray-100 hover:border-accent">
+<img alt="Video Testimonial from Mike" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKuENCdkRupTBGVmGtIm3RbmdCra9cHxpIWD_0aW1OkdGxmAwMiHBgyQjApHOxS6y1qK5Q8GXaPkZQjFF2_Gm-zc2QQmBYTPCTbAAfc80UYJ2rmbmKtQ1G0sjtzqLufgx9dfAqVTnga18qonmfjlOvXjvqAd-aVZVPj6H4ZTMgVDBz_v-tqZvmselg_kcA3sApWDy7W2rvT1Xz_LtkZGXqYoffOISBb9p25RYmQ8CRh-MGCgEvgQ-P7HSuzDUqJYMKFXK34Weg7hM"/>
+<div class="absolute inset-0 bg-black/20 flex flex-col items-center justify-center transition-colors group-hover:bg-black/10">
+<div class="size-16 rounded-full bg-accent text-primary border-4 border-white flex items-center justify-center mb-3 shadow-2xl transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-4xl ml-1 font-bold">play_arrow</span>
+</div>
+<span class="bg-primary text-white px-3 py-1 font-bold tracking-wide uppercase text-xs rounded shadow-md">Video Testimonial</span>
+</div>
+</div>
+<div class="group relative w-full aspect-video bg-gray-900 rounded-xl overflow-hidden shadow-card-heavy cursor-pointer transform transition-transform hover:-translate-y-2 border-4 border-gray-100 hover:border-accent">
+<img alt="Video Testimonial from Linda" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn4HRACJrIuH2gYT2yPydPuTuPJlI9DXUSceWwcHHNKIB7I7QuLvy8Fno9sB_3Xi7HhsX-o3DDPh1Bc42csPnTZsi8vykQp7ky0OChV88BkHItJxLSrjuzshGk8aKnNtqLym_ezhohxFfukYdNUt0rMg3FqUsgf6dHpSDFhSDcRMwwvfTLJSvR_-eHOjMihk9cz1hlqgeu4z_sOW57_AsMxFM2ron2sOnA8asxWEB4n__rD9n3sjTNvDmjbRDi8_4B7T0giWOUVg0"/>
+<div class="absolute inset-0 bg-black/20 flex flex-col items-center justify-center transition-colors group-hover:bg-black/10">
+<div class="size-16 rounded-full bg-accent text-primary border-4 border-white flex items-center justify-center mb-3 shadow-2xl transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-4xl ml-1 font-bold">play_arrow</span>
+</div>
+<span class="bg-primary text-white px-3 py-1 font-bold tracking-wide uppercase text-xs rounded shadow-md">Video Testimonial</span>
+</div>
+</div>
+</div>
+<div class="relative w-full overflow-hidden mt-8 group/carousel" tabindex="0">
+<div class="flex snap-x snap-mandatory overflow-x-auto gap-6 pb-8 px-4 scrollbar-hide">
+<div class="snap-center shrink-0 w-[85%] sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] bg-background-light p-8 rounded-xl relative border-2 border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300">
+<span class="material-symbols-outlined absolute top-6 left-6 text-6xl text-gray-200 -z-0">format_quote</span>
+<p class="text-primary font-medium relative z-10 mb-8 mt-4 leading-relaxed text-lg">
+                "Absolutely fantastic service. The technician arrived within 45 minutes of my call and fixed our broken spring in no time. Highly recommended!"
+            </p>
+<div class="flex items-center gap-4 border-t-2 border-gray-200 pt-6 mt-auto relative z-10">
+<div class="size-12 rounded-full bg-slate-300 shadow-sm border-2 border-white" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC5E-LOLqpqy7yLbYVozxE6kX2XXa4gaWs7OiJ43uBu9pveZFvLLhQ5Nod_pS4qU8DpQngd5x7tfwbqrsMzx4N64zUaaWd2-LX-iKrhfVc2uMVhX_i2Gxbr8Aci4onBnLKE4WH4Z6Cb5v7Av5zJMTmI86uqcQTDM19K_gQ3Kmjo2FFOv3ym-9_dpeF-fEXGvdfqi2Fp9Ian6_AxcrHJiZTZd0_lTnWM2X9x6SeNXPS5A7I_Y65sVjr_yrR0zJ69r4U25bXArU4WYSg'); background-size: cover;"></div>
+<div>
+<h4 class="font-bold text-primary text-base">Sarah Mitchell</h4>
+<div class="flex items-center gap-1 text-accent text-sm mt-0.5">
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+</div>
+<div class="snap-center shrink-0 w-[85%] sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] bg-background-light p-8 rounded-xl relative border-2 border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300">
+<span class="material-symbols-outlined absolute top-6 left-6 text-6xl text-gray-200 -z-0">format_quote</span>
+<p class="text-primary font-medium relative z-10 mb-8 mt-4 leading-relaxed text-lg">
+                "I thought I needed a whole new door, but Champions saved me thousands by repairing the tracks and motor. Honest and professional."
+            </p>
+<div class="flex items-center gap-4 border-t-2 border-gray-200 pt-6 mt-auto relative z-10">
+<div class="size-12 rounded-full bg-slate-300 shadow-sm border-2 border-white" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDKuENCdkRupTBGVmGtIm3RbmdCra9cHxpIWD_0aW1OkdGxmAwMiHBgyQjApHOxS6y1qK5Q8GXaPkZQjFF2_Gm-zc2QQmBYTPCTbAAfc80UYJ2rmbmKtQ1G0sjtzqLufgx9dfAqVTnga18qonmfjlOvXjvqAd-aVZVPj6H4ZTMgVDBz_v-tqZvmselg_kcA3sApWDy7W2rvT1Xz_LtkZGXqYoffOISBb9p25RYmQ8CRh-MGCgEvgQ-P7HSuzDUqJYMKFXK34Weg7hM'); background-size: cover;"></div>
+<div>
+<h4 class="font-bold text-primary text-base">David Ross</h4>
+<div class="flex items-center gap-1 text-accent text-sm mt-0.5">
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+</div>
+<div class="snap-center shrink-0 w-[85%] sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] bg-background-light p-8 rounded-xl relative border-2 border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300">
+<span class="material-symbols-outlined absolute top-6 left-6 text-6xl text-gray-200 -z-0">format_quote</span>
+<p class="text-primary font-medium relative z-10 mb-8 mt-4 leading-relaxed text-lg">
+                "The best contractor experience I've had. Clean, polite, and explained everything clearly. The new opener is whisper quiet."
+            </p>
+<div class="flex items-center gap-4 border-t-2 border-gray-200 pt-6 mt-auto relative z-10">
+<div class="size-12 rounded-full bg-slate-300 shadow-sm border-2 border-white" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCn4HRACJrIuH2gYT2yPydPuTuPJlI9DXUSceWwcHHNKIB7I7QuLvy8Fno9sB_3Xi7HhsX-o3DDPh1Bc42csPnTZsi8vykQp7ky0OChV88BkHItJxLSrjuzshGk8aKnNtqLym_ezhohxFfukYdNUt0rMg3FqUsgf6dHpSDFhSDcRMwwvfTLJSvR_-eHOjMihk9cz1hlqgeu4z_sOW57_AsMxFM2ron2sOnA8asxWEB4n__rD9n3sjTNvDmjbRDi8_4B7T0giWOUVg0'); background-size: cover;"></div>
+<div>
+<h4 class="font-bold text-primary text-base">Emily Chen</h4>
+<div class="flex items-center gap-1 text-accent text-sm mt-0.5">
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-center items-center gap-4 mt-2">
+<button aria-label="Previous reviews" class="size-10 rounded-full bg-primary hover:bg-accent text-white hover:text-primary transition-colors flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-2xl font-bold">chevron_left</span>
+</button>
+<div class="flex gap-2">
+<div class="w-3 h-3 rounded-full bg-accent ring-2 ring-offset-2 ring-primary/10"></div>
+<div class="w-3 h-3 rounded-full bg-gray-300"></div>
+<div class="w-3 h-3 rounded-full bg-gray-300"></div>
+</div>
+<button aria-label="Next reviews" class="size-10 rounded-full bg-primary hover:bg-accent text-white hover:text-primary transition-colors flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-2xl font-bold">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="relative py-24 md:py-32 px-4 md:px-10 lg:px-40 bg-background-light overflow-hidden border-t border-gray-200">
+<div class="relative z-10 max-w-[1280px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+<div class="flex flex-col gap-8 text-center lg:text-left">
+<div class="flex flex-col gap-6">
+<span class="inline-block px-4 py-2 rounded-full bg-primary text-white font-black text-sm tracking-wider uppercase w-fit mx-auto lg:mx-0 shadow-sm">
+                                Get a Free Quote Today
+                            </span>
+<h2 class="text-5xl md:text-6xl lg:text-7xl font-serif font-black text-primary leading-[1] tracking-tight">
+                                Ready to fix your<br/><span class="text-accent">garage door?</span>
+</h2>
+<p class="text-xl text-text-dark font-medium leading-relaxed max-w-lg mx-auto lg:mx-0">
+                                Fill out the form and we'll get back to you within 30 minutes with a free estimate. No hidden fees.
+                            </p>
+</div>
+<div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-2">
+<div class="flex items-center gap-3 bg-white px-6 py-4 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+<div class="p-2 rounded-full bg-accent/20">
+<span class="material-symbols-outlined text-accent text-[24px] font-bold">timer</span>
+</div>
+<span class="font-bold text-primary text-base">Fast Response Time</span>
+</div>
+<div class="flex items-center gap-3 bg-white px-6 py-4 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+<div class="p-2 rounded-full bg-accent/20">
+<span class="material-symbols-outlined text-accent text-[24px] font-bold">verified_user</span>
+</div>
+<span class="font-bold text-primary text-base">Licensed Experts</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl shadow-card-heavy p-8 md:p-12 border-2 border-gray-100 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-3 bg-accent"></div>
+<h3 class="text-3xl font-black text-primary mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-accent text-4xl">mail</span> Request Service
+                        </h3>
+<form class="flex flex-col gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold text-primary ml-1 uppercase tracking-wide" for="name">Name</label>
+<input class="w-full h-14 rounded-lg bg-gray-50 border-2 border-gray-200 focus:border-accent focus:ring-accent focus:ring-1 text-primary placeholder:text-gray-400 transition-all px-4 text-base font-medium" id="name" placeholder="John Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold text-primary ml-1 uppercase tracking-wide" for="phone">Phone Number</label>
+<input class="w-full h-14 rounded-lg bg-gray-50 border-2 border-gray-200 focus:border-accent focus:ring-accent focus:ring-1 text-primary placeholder:text-gray-400 transition-all px-4 text-base font-medium" id="phone" placeholder="(555) 123-4567" type="tel"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold text-primary ml-1 uppercase tracking-wide" for="email">Email Address</label>
+<input class="w-full h-14 rounded-lg bg-gray-50 border-2 border-gray-200 focus:border-accent focus:ring-accent focus:ring-1 text-primary placeholder:text-gray-400 transition-all px-4 text-base font-medium" id="email" placeholder="john@example.com" type="email"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold text-primary ml-1 uppercase tracking-wide" for="message">Service Needed / Message</label>
+<textarea class="w-full rounded-lg bg-gray-50 border-2 border-gray-200 focus:border-accent focus:ring-accent focus:ring-1 text-primary placeholder:text-gray-400 transition-all resize-none py-4 px-4 text-base font-medium" id="message" placeholder="Describe your issue..." rows="4"></textarea>
+</div>
+<button class="mt-4 w-full bg-primary hover:bg-primary-dark hover:brightness-110 text-white font-black text-lg h-16 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 border-b-4 border-slate-900" type="submit">
+                                SUBMIT REQUEST <span class="material-symbols-outlined text-accent">send</span>
+</button>
+<p class="text-xs text-center text-gray-500 mt-2 font-medium">
+                                By submitting, you agree to our terms of service. Your information is secure.
+                            </p>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-primary text-gray-300 py-20 px-4 md:px-10 lg:px-40 border-t-8 border-accent">
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3 text-white">
+<div class="flex items-center justify-center size-10 bg-accent text-primary rounded-md shadow-sm">
+<span class="material-symbols-outlined text-2xl">garage_home</span>
+</div>
+<h2 class="text-2xl font-serif font-black tracking-tight uppercase">Champions</h2>
+</div>
+<p class="text-sm text-gray-300 leading-relaxed font-medium">
+                        Your trusted local experts for all garage door needs. Licensed, bonded, and insured. Serving the community for over 15 years.
+                    </p>
+<div class="flex gap-4 mt-2">
+<a class="size-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-accent hover:text-primary transition-all duration-300" href="#"><span class="material-symbols-outlined text-lg">thumb_up</span></a>
+<a class="size-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-accent hover:text-primary transition-all duration-300" href="#"><span class="material-symbols-outlined text-lg">chat_bubble</span></a>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h3 class="text-white font-black text-lg uppercase tracking-wide border-b border-gray-700 pb-2 w-fit">Company</h3>
+<ul class="flex flex-col gap-3 text-sm font-medium">
+<li><a class="hover:text-accent transition-colors flex items-center gap-2 group" href="#"><span class="w-1.5 h-1.5 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>About Us</a></li>
+<li><a class="hover:text-accent transition-colors flex items-center gap-2 group" href="#"><span class="w-1.5 h-1.5 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>Careers</a></li>
+<li><a class="hover:text-accent transition-colors flex items-center gap-2 group" href="#"><span class="w-1.5 h-1.5 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>Blog</a></li>
+<li><a class="hover:text-accent transition-colors flex items-center gap-2 group" href="#"><span class="w-1.5 h-1.5 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>Privacy Policy</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-6">
+<h3 class="text-white font-black text-lg uppercase tracking-wide border-b border-gray-700 pb-2 w-fit">Services</h3>
+<ul class="flex flex-col gap-3 text-sm font-medium">
+<li><a class="hover:text-accent transition-colors flex items-center gap-2 group" href="#"><span class="w-1.5 h-1.5 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>Spring Repair</a></li>
+<li><a class="hover:text-accent transition-colors flex items-center gap-2 group" href="#"><span class="w-1.5 h-1.5 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>Opener Installation</a></li>
+<li><a class="hover:text-accent transition-colors flex items-center gap-2 group" href="#"><span class="w-1.5 h-1.5 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>Cable Replacement</a></li>
+<li><a class="hover:text-accent transition-colors flex items-center gap-2 group" href="#"><span class="w-1.5 h-1.5 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>Maintenance Tune-up</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-6">
+<h3 class="text-white font-black text-lg uppercase tracking-wide border-b border-gray-700 pb-2 w-fit">Contact Us</h3>
+<ul class="flex flex-col gap-4 text-sm font-medium">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent text-xl mt-0.5">location_on</span>
+<span class="text-gray-300">123 Repair Street,<br/>Suite 100, City, ST 12345</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-accent text-xl">call</span>
+<a class="text-white hover:text-accent transition-colors font-bold text-lg" href="#">(555) 123-4567</a>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-accent text-xl">mail</span>
+<a class="text-gray-300 hover:text-white transition-colors" href="#">help@champions.com</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500 font-medium">
+<p>© 2023 Champions Garage Door Repair. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-gray-300 transition-colors" href="#">Terms</a>
+<a class="hover:text-gray-300 transition-colors" href="#">Privacy</a>
+<a class="hover:text-gray-300 transition-colors" href="#">Cookies</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
